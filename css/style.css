@@ -1,0 +1,224 @@
+:root{
+    padding: 0;
+    margin: 0;
+    --bg-color: #00274E;  
+    --orange: #FABC3F;
+    --ecard-color: #001F3F;
+    --card-border-color: #747474;
+    --card-inner-bg: #DADADA;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+#info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#titles-container{
+    width: fit-content;
+}
+
+#dev-name{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+}
+
+#dev-title{
+    color: var(--orange);
+    font-family: "Roboto condensed",sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    -webkit-text-stroke: 6px black;
+    paint-order: stroke fill;
+}
+
+#dev-photo-frame{
+    width: 190px;
+    height: 190px;
+}
+
+#dev-photo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.education-card{
+    margin: 10px;
+    width: 300px;
+}
+
+.education-card-title{  
+    background-color: var(--ecard-color);
+    border: solid var(--card-border-color);
+    border-radius: 10px 10px 0px 0px;
+    border-width: 2px 2px 0px 2px; 
+}
+
+.education-card-description{
+    background-color: var(--card-inner-bg);
+    border: solid var(--card-border-color);
+    border-radius: 0px 0px 10px 10px;
+    border-width: 0px 2px 2px 2px;
+    display: flex; 
+}
+
+.education-title{
+    font-family: "Roboto condensed",sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.education-img-frame{
+    margin: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.education-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.education-description{
+    flex-grow: 1;
+}
+
+.education-description h4{
+    font-family: "Roboto condensed";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.education-card-description{
+    overflow: hidden;
+}
+
+.sub-section{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+/* #skills-container{
+
+} */
+
+.skills-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+}
+
+#social-skills{
+    border: 2px solid var(--card-border-color);
+    border-radius: 15px;
+    background-color: var(--ecard-color);
+}
+
+.social-skills-list li{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+#contact-phrase{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+    font-size: 25px;
+}   
+
+.emphasis{
+    color: var(--orange);   
+}
+
+.contact-media{
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo-frame{
+    width: 40px;
+    height: 40px;
+}
+
+.contact-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-media-text{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    font-size: 20px;
+}
+
+#contact-form-container{
+    background-color: var(--ecard-color);
+    border-radius: 20px;
+    border: 2px solid var(--card-border-color);
+    justify-content: center;
+}
+
+.img-ipt-container{
+    display: flex;
+    align-items: center;
+}
+
+.img-ipt-frame{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.img-ipt{
+    width: 100%;
+    height: 100%;
+}
+
+#name-ipt, #email-ipt{
+    height: 35px;
+}
+
+#contact-form label{
+    color: white;
+    font-family: "Roboto condensed",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#contact-form input,textarea{
+    border-radius: 5px;
+    background-color: var(--ecard-color);
+    border: 1px solid white;
+}
+
+#send-btn{
+    background-color: #FF8A5C;
+    color: white;
+    display: block;
+    border-radius: 20px;
+    font-size: 30px;
+}

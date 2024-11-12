@@ -207,6 +207,7 @@ body{
     font-family: "Roboto condensed",sans-serif;
     font-weight: 500;
     font-size: 20px;
+    margin-left: 50px;
 }
 
 #contact-form input,textarea{
@@ -216,6 +217,7 @@ body{
 }
 
 #send-btn{
+    margin-top: 20px;
     background-color: #FF8A5C;
     color: white;
     display: block;

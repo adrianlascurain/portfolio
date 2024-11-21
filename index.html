@@ -13,10 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        
-    </nav>
+    
+    
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Educación</a>
+                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link" href="#">Habilidades</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
     <main>
         <!-- Main dev information container -->
         <div id="info-container">
@@ -121,10 +137,10 @@
         <h2 class="sub-section text-center">Habilidades</h2>
         <div id="skills-container">
 
-            <div id="social-skills" class="mx-3">
+            <div id="social-skills">
                 <div class="skills-title">
                     <figure>
-                        <img src="./assets/chat-communication-conversation-svgrepo-com.svg" alt="habilidades de comunicación">
+                        <img src="./assets/chat-communication-conversation-svgrepo-com.svg" alt="habilidades interpersonales">
                     </figure>
                     <h3>Interpersonales</h3>
                 </div>
@@ -138,7 +154,19 @@
             </div>
 
             <div id="tech-skills">
-
+                <div class="skills-title">
+                    <figure>
+                        <img src="./assets/code-svgrepo-com.svg" alt="habilidades técnicas">
+                    </figure>
+                    <h3>Técnicas</h3>
+                </div>
+                <div id="tech-skills-grid">
+                    <div class="tech-card">
+                        <figure>
+                            <img src="./assets/react-svgrepo-com.svg" alt="react">
+                        </figure>
+                    </div>
+                </div>
             </div>
 
         </div>

@@ -8,10 +8,79 @@
     --card-inner-bg: #DADADA;
     --font: "Roboto condensed",sans-serif;
     box-sizing: border-box;
+    --tech-bg: #484848;
 }
 
 body{
     background-color: var(--bg-color);
+}
+
+.navbar{
+    margin-top: 20px;
+    border: none;
+    /* backdrop-filter: blur(5px); */
+    width: 90%;
+    
+    margin-right: auto;
+    margin-left: auto;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-bottom: 2px solid rgba(234,191,255,1);
+    border-left: 2px solid rgba(234,191,255,1);
+    border-top: 2px solid rgba(152,249,255,1);
+    border-right: 2px solid rgba(152,249,255,1);
+
+    box-shadow: 0px 0px 10px white;
+    backdrop-filter: blur(10px);
+}
+
+.navbar span{
+    background-image: url(/assets/menu-svgrepo-com.svg);
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+}
+
+.navbar-toggler{
+    border: none;
+    margin-left: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-nav a{
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-text-stroke: 5px black;
+    paint-order: stroke fill;
+    margin-left: 30px;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link:focus{
+    color: white;
+    background-color: var(--orange);
+}
+
+.nav-link .active{
+    background-color: black;
+}
+
+
+.navbar-collapse{
+    justify-content: center;
 }
 
 #info-container{
@@ -19,6 +88,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 #titles-container{
@@ -225,13 +295,23 @@ body{
 }
 
 .skills-title figure{
+    width: 64px;
+    height: 64px;
     margin-right: 10px;
 }
 
-#social-skills{
+.skills-title img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#social-skills,
+#tech-skills{
     border: 2px solid var(--card-border-color);
     border-radius: 15px;
     background-color: var(--ecard-color);
+    margin-top: 20px;
 }
 
 .social-skills-list li{
@@ -240,6 +320,47 @@ body{
     font-size: 20px;
     font-weight: 500;
     
+}
+
+.tech-card{
+    background-color: var(--tech-bg);
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card:hover{
+    border: 2px solid white;
+}
+
+.tech-card:hover::after{
+    content: 'React';
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+
+    color: white;
+
+}
+
+.tech-card figure{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+}
+
+.tech-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #contact-container{
@@ -364,3 +485,13 @@ body{
     width: 100%;
     height: 70px;
 }
+
+/* @media (min-width: 768px){
+    .navbar-nav{
+        margin-left: 30px;
+    }
+
+    .navbar-toggler{
+        margin-left: 10px;
+    }
+} */
